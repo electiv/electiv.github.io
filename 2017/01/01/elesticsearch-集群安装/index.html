@@ -10,16 +10,16 @@
 <title>elasticsearch-集群安装 - Hexo</title>
 
 
-    <meta name="description" content="这里假如有两个节点：node-1、node-2配置：elasticsearch.yml">
+    <meta name="description" content="这里假如有两个节点：node-1、node-2 配置：elasticsearch.yml">
 <meta property="og:type" content="article">
 <meta property="og:title" content="elasticsearch-集群安装">
 <meta property="og:url" content="http://yoursite.com/2017/01/01/elesticsearch-%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="这里假如有两个节点：node-1、node-2配置：elasticsearch.yml">
+<meta property="og:description" content="这里假如有两个节点：node-1、node-2 配置：elasticsearch.yml">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta property="article:published_time" content="2016-12-31T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-01-29T10:24:01.080Z">
+<meta property="article:modified_time" content="2020-01-29T12:30:20.882Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="elasticsearch">
 <meta name="twitter:card" content="summary">
@@ -164,7 +164,8 @@
             
         </h1>
         <div class="content">
-            <html><head></head><body><p>这里假如有两个节点：node-1、node-2<br>配置：elasticsearch.yml</p>
+            <html><head></head><body><p>这里假如有两个节点：node-1、node-2</p>
+<p>配置：elasticsearch.yml</p>
 <a id="more"></a> 
 
 <p>node-1:</p>
@@ -173,10 +174,14 @@
 <p>node-2:</p>
 <figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">cluster.name: liang</span><br><span class="line">node.name: node-2</span><br><span class="line">bootstrap.mlockall: true</span><br><span class="line">network.host: slave1</span><br><span class="line">network.publish_host: slave1</span><br><span class="line">discovery.zen.ping.unicast.hosts: ["master"]</span><br><span class="line">path.data: /usr/local/install_soft/elasticsearch-2.3.4/data</span><br><span class="line">path.logs: /usr/local/install_soft/elasticsearch-2.3.4/logs</span><br></pre></td></tr></tbody></table></figure>
 
-<p>注意：<br>1、所有的配置前面空一个空字符<br>2、配置格式  key: value，value前面空一个空字符<br>如：</p>
+<p>注意：</p>
+<p>1、所有的配置前面空一个空字符</p>
+<p>2、配置格式  key: value，value前面空一个空字符</p>
+<p>如：</p>
 <figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cluster.name: sbt_general_app</span><br></pre></td></tr></tbody></table></figure>
 
-<p><strong>扩展:</strong><br>只需要修改discovery.zen.ping.unicast.hosts属性，其内的值不需要是全部运行节点的ip，只需要任意一台运行中的IP即可</p>
+<p><strong>扩展:</strong></p>
+<p>只需要修改discovery.zen.ping.unicast.hosts属性，其内的值不需要是全部运行节点的ip，只需要任意一台运行中的IP即可</p>
 </body></html>
         </div>
 
@@ -208,6 +213,20 @@
 </div>
 
 
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2017/01/01/%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0%E6%8D%A2%E5%BA%95%E6%8E%A8%E5%AF%BC/">
+                <span class="level-item">elasticsearch-集群安装</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 
@@ -276,10 +295,10 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Post
+                        Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        1
+                        2
                     </p>
                 </div>
             </div>
@@ -351,7 +370,7 @@
                 <span class="level-item">elasticsearch</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">2</span>
             </span>
         </a></li>
             </ul>
@@ -385,6 +404,25 @@
             </div>
         </article>
         
+        <article class="media">
+            
+            <a href="/2017/01/01/%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0%E6%8D%A2%E5%BA%95%E6%8E%A8%E5%AF%BC/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="elasticsearch-集群安装">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2016-12-31T16:00:00.000Z">2017-01-01</time></div>
+                    <a href="/2017/01/01/%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0%E6%8D%A2%E5%BA%95%E6%8E%A8%E5%AF%BC/" class="title has-link-black-ter is-size-6 has-text-weight-normal">elasticsearch-集群安装</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/elasticsearch/">elasticsearch</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
     </div>
 </div>
 
@@ -400,7 +438,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/elasticsearch/">
                         <span class="tag">elasticsearch</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -434,7 +472,7 @@
                     <span class="level-item">January 2017</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
